@@ -10,41 +10,35 @@
   </script>
   <style>
     .glow {
-      box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.3);
+      box-shadow: 0 0 60px -15px rgba(59, 130, 246, 0.25);
+    }
+    .glow-emerald {
+      box-shadow: 0 0 60px -15px rgba(16, 185, 129, 0.2);
     }
   </style>
 </head>
 <body class="bg-[#121214] text-zinc-100 font-sans antialiased min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
 
   <!-- Navigation -->
-  <nav class="border-b border-zinc-800/80 bg-[#161618]/80 backdrop-blur sticky top-0 z-50 px-6 py-3.5 flex items-center justify-between">
+  <nav class="border-b border-zinc-800/80 bg-[#161618]/90 backdrop-blur sticky top-0 z-50 px-6 py-3.5 flex items-center justify-between">
     <div class="flex items-center gap-3">
       <img src="assets/logo.png" alt="AI Studio Pro Logo" class="w-8 h-8 rounded-lg shadow-sm" onerror="this.style.display='none'" />
       <span class="font-bold text-lg tracking-tight text-white">AI Studio <span class="text-blue-500">Pro</span></span>
     </div>
     
-    <div class="flex items-center gap-4 text-sm font-medium">
-      <a href="#features" class="text-zinc-400 hover:text-white transition hidden sm:inline-block">Features</a>
-      <a href="#preview" class="text-zinc-400 hover:text-white transition hidden sm:inline-block">Preview</a>
-      <!-- Replace with your actual GitHub repository URL -->
-      <a href="https://github.com/reomar07/ai-studio-pro" target="_blank" class="text-zinc-400 hover:text-white transition flex items-center gap-1.5">
+    <div class="flex items-center gap-5 text-sm font-medium">
+      <a href="#features" class="text-zinc-400 hover:text-white transition hidden md:inline-block">Features</a>
+      <a href="#spotlights" class="text-zinc-400 hover:text-white transition hidden md:inline-block">Deep Dive</a>
+      <a href="#preview" class="text-zinc-400 hover:text-white transition hidden sm:inline-block">Interface</a>
+      <a href="https://github.com/reomar07" target="_blank" class="text-zinc-400 hover:text-white transition flex items-center gap-1.5">
         <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
         GitHub
       </a>
-      <!-- Replace with your GitHub release direct download link -->
-      <a href="https://github.com/reomar07/AI_Studio_Pro/releases/latest" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-full transition shadow-lg shadow-blue-600/20">
+      <a href="https://github.com/reomar07/ai-studio-pro/releases/latest" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-full transition shadow-lg shadow-blue-600/20">
         Download v1.0
       </a>
     </div>
   </nav>
-
-  <!-- Top Ad Slot Banner -->
-  <div class="w-full max-w-4xl mx-auto mt-4 px-4">
-    <div class="w-full bg-[#1c1c1f] border border-dashed border-zinc-700/60 rounded-xl h-20 flex items-center justify-center text-xs text-zinc-500 tracking-wider uppercase font-mono">
-      <!-- PASTE GOOGLE ADSENSE OR AD BANNER CODE HERE -->
-      <span>Advertisement Slot (728x90)</span>
-    </div>
-  </div>
 
   <!-- Hero Section -->
   <header class="py-16 sm:py-24 px-6 text-center max-w-4xl mx-auto flex flex-col items-center">
@@ -54,87 +48,253 @@
     
     <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
       Your Private, High-Performance <br/>
-      <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">AI Desktop Studio</span>
+      <span class="bg-gradient-to-r from-blue-400 via-teal-400 to-emerald-400 bg-clip-text text-transparent">AI Desktop Studio</span>
     </h1>
 
     <p class="text-base sm:text-lg text-zinc-400 max-w-2xl mb-10 leading-relaxed">
-      A lightweight Windows client equipped with local document RAG search, live web browsing, sandboxed Python script execution, and multi-model completions.
+      A native desktop workspace equipped with local document RAG, one-click Python execution, custom provider profiles, dynamic prompt libraries, and branching tree conversations.
     </p>
 
     <div class="flex flex-col sm:flex-row items-center gap-4">
-      <!-- Replace with your exact setup installer download link -->
-      <a href="https://github.com/reomar07/AI_Studio_Pro/releases/latest" 
+      <a href="https://github.com/reomar07/ai-studio-pro/releases/latest/download/AI_Studio_Pro_Setup.exe" 
          class="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-black hover:bg-zinc-200 font-semibold px-8 py-3.5 rounded-xl shadow-xl transition">
         <span>🪟 Download for Windows (.exe)</span>
       </a>
-      <a href="https://github.com/reomar07/ai-studio-pro" target="_blank" 
+      <a href="https://github.com/reomar07" target="_blank" 
          class="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-800/80 hover:bg-zinc-700 text-zinc-200 font-medium px-6 py-3.5 rounded-xl border border-zinc-700/50 transition">
         ⭐ View Source on GitHub
       </a>
     </div>
-    <span class="text-xs text-zinc-500 mt-3 font-mono">Requires Windows 10/11 (64-bit)</span>
+    <span class="text-xs text-zinc-500 mt-3 font-mono">Requires Windows 10/11 (64-bit) • No forced telemetry</span>
   </header>
 
-  <!-- App Screenshot Gallery Preview -->
-  <section id="preview" class="max-w-5xl mx-auto px-6 mb-20">
+  <!-- Main Screenshot Window -->
+  <section id="preview" class="max-w-5xl mx-auto px-6 mb-24">
     <div class="relative rounded-2xl p-2 bg-gradient-to-b from-zinc-700/40 to-zinc-900 border border-zinc-800 glow">
-      <!-- Replace 'assets/screenshot.png' with your actual screenshot filename -->
-      <img src="assets/screenshot.png" alt="AI Studio Pro Workspace Interface" 
-           class="rounded-xl w-full border border-zinc-800 shadow-2xl object-cover bg-zinc-900 min-h-[300px]"
+      <div class="flex items-center gap-2 px-3 py-2 border-b border-zinc-800/80 bg-[#161618] rounded-t-xl text-xs text-zinc-500">
+        <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+        <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+        <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+        <span class="ml-2 font-mono text-[11px] text-zinc-400">AI Studio Pro Workspace</span>
+      </div>
+      <img src="assets/screenshot.png" alt="AI Studio Pro Interface" 
+           class="rounded-b-xl w-full border-t border-zinc-800 shadow-2xl object-cover bg-zinc-950 min-h-[350px]"
            onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80'" />
     </div>
   </section>
 
   <!-- Feature Grid -->
-  <section id="features" class="max-w-5xl mx-auto px-6 py-12 border-t border-zinc-800/80">
-    <h2 class="text-2xl sm:text-3xl font-bold text-center text-white mb-12">Built for Developers & Creators</h2>
+  <section id="features" class="max-w-6xl mx-auto px-6 py-12 border-t border-zinc-800/80">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">Engineered for Complete Local Control</h2>
+      <p class="text-sm text-zinc-400">No locked-in models. No cloud storage of your personal data. Everything runs directly on your machine.</p>
+    </div>
     
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-[#18181b] border border-zinc-800 p-6 rounded-2xl">
-        <div class="text-2xl mb-3">📁</div>
+      <!-- Feature 1 -->
+      <div class="bg-[#18181b] border border-zinc-800/90 hover:border-zinc-700 p-6 rounded-2xl transition">
+        <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">📁</div>
         <h3 class="font-bold text-white mb-2">Local Workspace RAG</h3>
-        <p class="text-sm text-zinc-400">Attach entire project folders. Our lightweight BM25 retrieval indexes code, PDFs, and documentation locally in memory.</p>
+        <p class="text-sm text-zinc-400 leading-relaxed">Attach entire local project directories. The built-in BM25 engine tokenizes and retrieves code files, PDFs, and documentation without external vector databases.</p>
       </div>
 
-      <div class="bg-[#18181b] border border-zinc-800 p-6 rounded-2xl">
-        <div class="text-2xl mb-3">▶️</div>
+      <!-- Feature 2 -->
+      <div class="bg-[#18181b] border border-zinc-800/90 hover:border-zinc-700 p-6 rounded-2xl transition">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">▶️</div>
         <h3 class="font-bold text-white mb-2">Run Python Locally</h3>
-        <p class="text-sm text-zinc-400">Run LLM-generated Python scripts directly with one click inside your workspace and view the terminal output instantly.</p>
+        <p class="text-sm text-zinc-400 leading-relaxed">Execute AI-generated scripts in a sandboxed local environment. Includes safety confirmations, script saving, and instant console output viewing.</p>
       </div>
 
-      <div class="bg-[#18181b] border border-zinc-800 p-6 rounded-2xl">
-        <div class="text-2xl mb-3">🌐</div>
+      <!-- Feature 3 -->
+      <div class="bg-[#18181b] border border-zinc-800/90 hover:border-zinc-700 p-6 rounded-2xl transition">
+        <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4">🌐</div>
         <h3 class="font-bold text-white mb-2">Live Web Search</h3>
-        <p class="text-sm text-zinc-400">Toggle live DuckDuckGo web grounding to pull real-time references and citations directly into your conversations.</p>
+        <p class="text-sm text-zinc-400 leading-relaxed">Toggle live internet searches on demand. The client consults real-time sources and generates clickable citation badges for transparent verification.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-[#18181b] border border-zinc-800/90 hover:border-zinc-700 p-6 rounded-2xl transition">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4">⚙️</div>
+        <h3 class="font-bold text-white mb-2">Any Model or Local LLM</h3>
+        <p class="text-sm text-zinc-400 leading-relaxed">Connect to OpenRouter, OpenAI, Groq, or run completely offline using LM Studio, Ollama, or local GGUF servers via standard OpenAI-compatible endpoints.</p>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="bg-[#18181b] border border-zinc-800/90 hover:border-zinc-700 p-6 rounded-2xl transition">
+        <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">🌿</div>
+        <h3 class="font-bold text-white mb-2">Branching Conversations</h3>
+        <p class="text-sm text-zinc-400 leading-relaxed">Edit prior prompts at any turn without losing your path. Branching trees let you explore alternative replies and navigate variations easily with step controls.</p>
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="bg-[#18181b] border border-zinc-800/90 hover:border-zinc-700 p-6 rounded-2xl transition">
+        <div class="w-10 h-10 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-xl mb-4">📚</div>
+        <h3 class="font-bold text-white mb-2">Prompt & Persona Library</h3>
+        <p class="text-sm text-zinc-400 leading-relaxed">Save your reusable prompt templates and engineering personas. Inject them into your chats or assign them as permanent system instructions with a single click.</p>
       </div>
     </div>
   </section>
 
-  <!-- Secondary Mid-Page Ad Slot -->
-  <div class="w-full max-w-4xl mx-auto my-10 px-4">
-    <div class="w-full bg-[#1c1c1f] border border-dashed border-zinc-700/60 rounded-xl h-24 flex items-center justify-center text-xs text-zinc-500 tracking-wider uppercase font-mono">
-      <!-- PASTE SECOND AD BANNER CODE HERE -->
-      <span>Advertisement Slot (Responsive Banner)</span>
-    </div>
-  </div>
+  <!-- Deep Dive Spotlight Sections -->
+  <section id="spotlights" class="max-w-6xl mx-auto px-6 py-20 space-y-28">
 
-  <!-- Footer & Contact / Report Issue -->
+    <!-- Spotlight 1: Provider Setup & Local LLMs -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold mb-4 uppercase tracking-wider">
+          Total Provider Freedom
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">Switch Between Cloud APIs & Offline Local Models</h3>
+        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+          Never be held hostage by a single vendor. Configure custom base URLs, bespoke request headers, and custom model identifiers. Easily jump between fast cloud inference or completely disconnected, private models hosted on your local machine with LM Studio or Ollama.
+        </p>
+        <ul class="space-y-3 text-sm text-zinc-300">
+          <li class="flex items-center gap-2.5">
+            <span class="text-amber-500 font-bold">✓</span> Multiple named provider profiles (OpenRouter, LM Studio, Custom)
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="text-amber-500 font-bold">✓</span> Zero data transmission to third parties when running local models
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="text-amber-500 font-bold">✓</span> JSON custom header support for specialized authentication gateways
+          </li>
+        </ul>
+      </div>
+      <div class="rounded-2xl p-2 bg-gradient-to-b from-zinc-700/30 to-zinc-900 border border-zinc-800 shadow-2xl">
+        <img src="assets/provider-settings.png" alt="Provider Setup Modal" 
+             class="rounded-xl w-full border border-zinc-800 bg-[#18181b] object-cover"
+             onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80'" />
+      </div>
+    </div>
+
+    <!-- Spotlight 2: Prompt Library & Personas -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:flex-row-reverse">
+      <div class="lg:order-2">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-rose-500/10 border border-rose-500/20 text-rose-400 text-xs font-semibold mb-4 uppercase tracking-wider">
+          Workflow Acceleration
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">Curated Prompt Library & System Personas</h3>
+        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+          Stop typing the same boilerplate prompts repeatedly. Build a persistent library of code reviewers, translators, creative writing partners, or technical mentors. One click applies them as the chat persona or appends them directly into your prompt draft.
+        </p>
+        <ul class="space-y-3 text-sm text-zinc-300">
+          <li class="flex items-center gap-2.5">
+            <span class="text-rose-400 font-bold">✓</span> Instant injection into user input or conversation system prompt
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="text-rose-400 font-bold">✓</span> Fast local search through your entire template repository
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="text-rose-400 font-bold">✓</span> Stored entirely on disk in clean, portable JSON format
+          </li>
+        </ul>
+      </div>
+      <div class="lg:order-1 rounded-2xl p-2 bg-gradient-to-b from-zinc-700/30 to-zinc-900 border border-zinc-800 shadow-2xl">
+        <img src="assets/prompt-library.png" alt="Prompt Library Interface" 
+             class="rounded-xl w-full border border-zinc-800 bg-[#18181b] object-cover"
+             onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80'" />
+      </div>
+    </div>
+
+    <!-- Spotlight 3: Local Python Script Runner -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-4 uppercase tracking-wider">
+          Developer Productivity
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">Run, Test, and Save Python Code In Real Time</h3>
+        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+          AI Studio Pro detects Python scripts generated in replies and equips them with dedicated execution buttons. Inspect code with syntax highlighting, click <strong>Run Local</strong> to test it against your system's Python binary, and view the console output directly in your thread.
+        </p>
+        <ul class="space-y-3 text-sm text-zinc-300">
+          <li class="flex items-center gap-2.5">
+            <span class="text-emerald-400 font-bold">✓</span> Auto-detects local Python interpreters across system directories
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="text-emerald-400 font-bold">✓</span> Built-in security confirmation modal with script preview before execution
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="text-emerald-400 font-bold">✓</span> One-click file saving dialog directly to your desktop workspace
+          </li>
+        </ul>
+      </div>
+      <div class="rounded-2xl p-2 bg-gradient-to-b from-zinc-700/30 to-zinc-900 border border-zinc-800 shadow-2xl glow-emerald">
+        <img src="assets/code-runner.png" alt="Python Code Execution" 
+             class="rounded-xl w-full border border-zinc-800 bg-[#18181b] object-cover"
+             onerror="this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80'" />
+      </div>
+    </div>
+
+    <!-- Spotlight 4: Conversation Branching Trees -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:flex-row-reverse">
+      <div class="lg:order-2">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-4 uppercase tracking-wider">
+          Non-Linear History
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-bold text-white mb-4">Tree-Based Conversation Branching</h3>
+        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+          Linear chat windows force you to delete your history whenever you want to test another query. AI Studio Pro builds an immutable node tree. Edit any message, regenerate with adjusted hyperparameters, and navigate alternate timelines with step controls.
+        </p>
+        <ul class="space-y-3 text-sm text-zinc-300">
+          <li class="flex items-center gap-2.5">
+            <span class="text-blue-400 font-bold">✓</span> Visual branch counters (<span class="font-mono text-xs">&lt; 1/3 &gt;</span>) on both user and assistant turns
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="text-blue-400 font-bold">✓</span> Rewind without destroying sibling nodes
+          </li>
+          <li class="flex items-center gap-2.5">
+            <span class="text-blue-400 font-bold">✓</span> Full export to Markdown (.MD) and structured JSON (.JSON)
+          </li>
+        </ul>
+      </div>
+      <div class="lg:order-1 rounded-2xl p-2 bg-gradient-to-b from-zinc-700/30 to-zinc-900 border border-zinc-800 shadow-2xl">
+        <img src="assets/branching.png" alt="Conversation Branching Preview" 
+             class="rounded-xl w-full border border-zinc-800 bg-[#18181b] object-cover"
+             onerror="this.src='https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80'" />
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="max-w-4xl mx-auto px-6 my-20 text-center">
+    <div class="bg-gradient-to-b from-[#1c1c20] to-[#161619] border border-zinc-800 p-10 sm:p-14 rounded-3xl shadow-2xl relative overflow-hidden">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Ready to take back your AI workflow?</h2>
+      <p class="text-zinc-400 text-sm max-w-xl mx-auto mb-8">
+        No subscription fees for the client, no data telemetry. Download the installer, configure your preferred models, and start working.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://github.com/reomar07/ai-studio-pro/releases/latest/download/AI_Studio_Pro_Setup.exe" 
+           class="w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 rounded-xl shadow-lg shadow-blue-600/25 transition">
+          Download AI Studio Pro (.exe)
+        </a>
+        <a href="https://github.com/reomar07" target="_blank" 
+           class="w-full sm:w-auto bg-zinc-800 hover:bg-zinc-700 text-zinc-300 font-medium px-6 py-3.5 rounded-xl border border-zinc-700/50 transition">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="mt-auto border-t border-zinc-800/80 bg-[#141416] py-10 px-6">
-    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
       <div class="flex flex-col items-center sm:items-start">
-        <span class="font-bold text-sm text-white">AI Studio Pro</span>
-        <span class="text-xs text-zinc-500 mt-1">Open source desktop client. Not affiliated with any commercial provider.</span>
+        <span class="font-bold text-sm text-white flex items-center gap-2">
+          <img src="assets/logo.png" alt="AI Studio Pro Logo" class="w-4 h-4 rounded" onerror="this.style.display='none'" />
+          AI Studio Pro
+        </span>
+        <span class="text-xs text-zinc-500 mt-1">Open source desktop client. Not affiliated with any commercial AI provider.</span>
       </div>
 
       <div class="flex items-center gap-6 text-xs text-zinc-400 font-medium">
-        <!-- Replace your-email@domain.com with your real support email -->
-        <a href="mailto:reomar@justgohome.net?subject=AI%20Studio%20Pro%20Issue%20Report" class="hover:text-red-400 transition flex items-center gap-1">
+        <a href="mailto:support@justgohome.net?subject=AI%20Studio%20Pro%20Issue%20Report" class="hover:text-red-400 transition flex items-center gap-1">
           🐛 Report an Issue
         </a>
-        <a href="https://github.com/reomar07/ai-studio-pro/issues" target="_blank" class="hover:text-white transition">
+        <a href="https://github.com/reomar07" target="_blank" class="hover:text-white transition">
           GitHub Issues
         </a>
-        <a href="https://github.com/reomar07/ai-studio-pro/blob/main/LICENSE" target="_blank" class="hover:text-white transition">
+        <a href="https://github.com/reomar07" target="_blank" class="hover:text-white transition">
           MIT License
         </a>
       </div>
