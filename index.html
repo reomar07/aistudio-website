@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Studio Pro — Intelligent Desktop Workspace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+  <style>
+    .glow {
+      box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-[#121214] text-zinc-100 font-sans antialiased min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
+
+  <!-- Navigation -->
+  <nav class="border-b border-zinc-800/80 bg-[#161618]/80 backdrop-blur sticky top-0 z-50 px-6 py-3.5 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <img src="assets/logo.png" alt="AI Studio Pro Logo" class="w-8 h-8 rounded-lg shadow-sm" onerror="this.style.display='none'" />
+      <span class="font-bold text-lg tracking-tight text-white">AI Studio <span class="text-blue-500">Pro</span></span>
+    </div>
+    
+    <div class="flex items-center gap-4 text-sm font-medium">
+      <a href="#features" class="text-zinc-400 hover:text-white transition hidden sm:inline-block">Features</a>
+      <a href="#preview" class="text-zinc-400 hover:text-white transition hidden sm:inline-block">Preview</a>
+      <!-- Replace with your actual GitHub repository URL -->
+      <a href="https://github.com/your-username/ai-studio-pro" target="_blank" class="text-zinc-400 hover:text-white transition flex items-center gap-1.5">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <!-- Replace with your GitHub release direct download link -->
+      <a href="https://github.com/reomar07/AI_Studio_Pro/releases/latest" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-full transition shadow-lg shadow-blue-600/20">
+        Download v1.0
+      </a>
+    </div>
+  </nav>
+
+  <!-- Top Ad Slot Banner -->
+  <div class="w-full max-w-4xl mx-auto mt-4 px-4">
+    <div class="w-full bg-[#1c1c1f] border border-dashed border-zinc-700/60 rounded-xl h-20 flex items-center justify-center text-xs text-zinc-500 tracking-wider uppercase font-mono">
+      <!-- PASTE GOOGLE ADSENSE OR AD BANNER CODE HERE -->
+      <span>Advertisement Slot (728x90)</span>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="py-16 sm:py-24 px-6 text-center max-w-4xl mx-auto flex flex-col items-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium mb-6">
+      🚀 v1.0 Released — Free & Open Source
+    </div>
+    
+    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+      Your Private, High-Performance <br/>
+      <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">AI Desktop Studio</span>
+    </h1>
+
+    <p class="text-base sm:text-lg text-zinc-400 max-w-2xl mb-10 leading-relaxed">
+      A lightweight Windows client equipped with local document RAG search, live web browsing, sandboxed Python script execution, and multi-model completions.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center gap-4">
+      <!-- Replace with your exact setup installer download link -->
+      <a href="https://github.com/your-username/ai-studio-pro/releases/latest/download/AI_Studio_Pro_Setup.exe" 
+         class="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-black hover:bg-zinc-200 font-semibold px-8 py-3.5 rounded-xl shadow-xl transition">
+        <span>🪟 Download for Windows (.exe)</span>
+      </a>
+      <a href="https://github.com/your-username/ai-studio-pro" target="_blank" 
+         class="w-full sm:w-auto flex items-center justify-center gap-2 bg-zinc-800/80 hover:bg-zinc-700 text-zinc-200 font-medium px-6 py-3.5 rounded-xl border border-zinc-700/50 transition">
+        ⭐ View Source on GitHub
+      </a>
+    </div>
+    <span class="text-xs text-zinc-500 mt-3 font-mono">Requires Windows 10/11 (64-bit)</span>
+  </header>
+
+  <!-- App Screenshot Gallery Preview -->
+  <section id="preview" class="max-w-5xl mx-auto px-6 mb-20">
+    <div class="relative rounded-2xl p-2 bg-gradient-to-b from-zinc-700/40 to-zinc-900 border border-zinc-800 glow">
+      <!-- Replace 'assets/screenshot.png' with your actual screenshot filename -->
+      <img src="assets/screenshot.png" alt="AI Studio Pro Workspace Interface" 
+           class="rounded-xl w-full border border-zinc-800 shadow-2xl object-cover bg-zinc-900 min-h-[300px]"
+           onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80'" />
+    </div>
+  </section>
+
+  <!-- Feature Grid -->
+  <section id="features" class="max-w-5xl mx-auto px-6 py-12 border-t border-zinc-800/80">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center text-white mb-12">Built for Developers & Creators</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-[#18181b] border border-zinc-800 p-6 rounded-2xl">
+        <div class="text-2xl mb-3">📁</div>
+        <h3 class="font-bold text-white mb-2">Local Workspace RAG</h3>
+        <p class="text-sm text-zinc-400">Attach entire project folders. Our lightweight BM25 retrieval indexes code, PDFs, and documentation locally in memory.</p>
+      </div>
+
+      <div class="bg-[#18181b] border border-zinc-800 p-6 rounded-2xl">
+        <div class="text-2xl mb-3">▶️</div>
+        <h3 class="font-bold text-white mb-2">Run Python Locally</h3>
+        <p class="text-sm text-zinc-400">Run LLM-generated Python scripts directly with one click inside your workspace and view the terminal output instantly.</p>
+      </div>
+
+      <div class="bg-[#18181b] border border-zinc-800 p-6 rounded-2xl">
+        <div class="text-2xl mb-3">🌐</div>
+        <h3 class="font-bold text-white mb-2">Live Web Search</h3>
+        <p class="text-sm text-zinc-400">Toggle live DuckDuckGo web grounding to pull real-time references and citations directly into your conversations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Secondary Mid-Page Ad Slot -->
+  <div class="w-full max-w-4xl mx-auto my-10 px-4">
+    <div class="w-full bg-[#1c1c1f] border border-dashed border-zinc-700/60 rounded-xl h-24 flex items-center justify-center text-xs text-zinc-500 tracking-wider uppercase font-mono">
+      <!-- PASTE SECOND AD BANNER CODE HERE -->
+      <span>Advertisement Slot (Responsive Banner)</span>
+    </div>
+  </div>
+
+  <!-- Footer & Contact / Report Issue -->
+  <footer class="mt-auto border-t border-zinc-800/80 bg-[#141416] py-10 px-6">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex flex-col items-center sm:items-start">
+        <span class="font-bold text-sm text-white">AI Studio Pro</span>
+        <span class="text-xs text-zinc-500 mt-1">Open source desktop client. Not affiliated with any commercial provider.</span>
+      </div>
+
+      <div class="flex items-center gap-6 text-xs text-zinc-400 font-medium">
+        <!-- Replace your-email@domain.com with your real support email -->
+        <a href="mailto:support@yourdomain.com?subject=AI%20Studio%20Pro%20Issue%20Report" class="hover:text-red-400 transition flex items-center gap-1">
+          🐛 Report an Issue
+        </a>
+        <a href="https://github.com/your-username/ai-studio-pro/issues" target="_blank" class="hover:text-white transition">
+          GitHub Issues
+        </a>
+        <a href="https://github.com/your-username/ai-studio-pro/blob/main/LICENSE" target="_blank" class="hover:text-white transition">
+          MIT License
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
