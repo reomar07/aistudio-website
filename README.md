@@ -16,7 +16,7 @@ AI Studio Pro is a high-performance, privacy-first desktop workspace that equips
 
 ## 📥 Download the App
 The latest compiled Windows installer (`AI_Studio_Pro_Setup.exe`) can be downloaded directly from the main application repository's Releases page:
-👉 **[Download AI Studio Pro](https://github.com/your-username/AI-Studio-Pro/releases/latest)**
+👉 **[Download AI Studio Pro](https://github.com/reomar07/AI_Studio_Pro/releases/latest)**
 
 ## 📜 License
 The website source code is available under the MIT License.
